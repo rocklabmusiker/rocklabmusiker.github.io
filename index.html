@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head lang="ru">
+<html lang="ru">
+<head>
     	<meta charset="UTF-8">
-    	<!-- <meta name="viewport" content="width=1200"> -->
-    	<meta http-equiv="content-language" content="ru">
     	<meta name="description" content="">
     	<meta name="keywords" content="">
     	<meta property="og:type" content="website"/>
@@ -14,369 +12,513 @@
     	<meta id="viewport" name="viewport" content="width=device-width">
     
     	<title>Titel</title>
-    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
-    	<script>
-    		if (screen.width <= 750) {
-    		    document.location = "../mobile/" + document.location.search;
-    		}
-    	</script>
-    <link rel="stylesheet" href="css/head.css">	
-    <link rel="stylesheet" href="css/main.css">
-    
-    <!-- asynchronously scripts -->
-    <!-- <script>
-    !function(e,t,n){function r(){for(;u[0]&&"loaded"==u[0][l];)o=u.shift(),o[f]=!a.parentNode.insertBefore(o,a)}for(var i,s,o,u=[],a=e.scripts[0],f="onreadystatechange",l="readyState";i=n.shift();)s=e.createElement(t),"async"in a?(s.async=!1,e.head.appendChild(s)):a[l]?(u.push(s),s[f]=r):e.write("<"+t+' src="'+i+'" defer></'+t+">"),s.src=i}(document,"script",
-    ["https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.jss",
-    "js/init.js"])
-    </script> -->
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Add fancyBox -->
-    
-    <script src="js/main.js"></script>
-    
-     
-    
-    <?php include('track/head.php'); ?>
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet"> 
+    	<style>
+    		/* here compressed css from head.css */
+    	</style>
+    	<link rel="stylesheet" href="css/head.css">
     
 </head>
 <body>
-	<div id="maket"></div>
+	
+<!-- <div id="maket"></div>  --> 
+
     	<header>
-    		<section class="section header">
-    		 	<div class="wrap header__wrap">
-    		 		<div class="header__contact">
-    		 			<p>Звоните сейчас! 04332/45926578 | <a href="#">info@boo.com</a></p>
+    		<section class="section head">
+    		 	<div class="wrap head__wrap">
+    		 		<div class="head__top">
+    		 			<div class="head__logo">
+    		 				<h4>LOGO</h4>
+    		 			</div>
+    					<nav class="nav">
+    						<div class="nav__button">
+    						    <span></span>
+    						    <span></span>
+    						    <span></span>
+    						</div>
+    						<ul class="nav__list">
+    							<li class="nav__item nav__item--active"><span class="nav__icon nav__icon-menu1"></span><a href="#team">О НАС</a></li>
+    							<li class="nav__item"><span class="nav__icon nav__icon-menu2"></span><a href="#time">ГРАФИК</a></li>
+    							<li class="nav__item"><span class="nav__icon nav__icon-menu3"></span><a href="#gallery">ГАЛЛЕРЕЯ</a></li>
+    							<li class="nav__item"><span class="nav__icon nav__icon-menu4"></span><a href="#price">ПРАЙСЛИСТ</a></li>
+    							<li class="nav__item"><span class="nav__icon nav__icon-menu5"></span><a href="#asans_slider">АСАНЫ</a></li>
+    							<li class="nav__item"><span class="nav__icon nav__icon-menu6"></span><a href="#contacts">КОНТАКТЫ</a></li>
+    						</ul>
+    					</nav>
     		 		</div>
-    		 		<div class="m-wrap header__m-wrap">
-    		 			<nav class="header__nav nav">
-    		 				<ul class="nav__list">
-    		 					<li class="nav__item nav__item--active"><a href="#">Home</a></li>
-    		 					<li class="nav__item"><a href="#">Почему мы</a></li>
-    		 					<li class="nav__item"><a href="#">Портфолио</a></li>
-    		 					<li class="nav__item"><a href="#">Цены</a></li>
-    		 					<li class="nav__item"><a href="#">Контакт</a></li>
-    		 					<li class="nav__item nav__search"><span>Поиск</span></li>
-    		 				</ul>
-    		 			</nav>
-    		 			<div class="header__titel">
-    		 				<h1>Создаём <br><span>сайты</span></h1>
-    		 				<h2>Профессионалы сделают правильно</h2>
-    		 				<a href="#">получить расчёт стоимости</a>
+    		 		<div class="head__back"></div>
+    		 		<div class="m-wrap head__m-wrap">
+    					<h1><span>Йога </span>источник здоровья</h1>
+    					<h2>ШИРОКИЙ СПЕКТОР ЙОГИ ПО ВСЕМУ МИРУ</h2>
+    		 			<div class="head__button">
+    		 				<img src="../images/button_figure.png" alt="button">
+    		 				<a href="#time">УЗНАТЬ БОЛЬШЕ</a>
     		 			</div>
     		 		</div>
-    		 		<a href="#" class="back-to-top">Back to Top</a>
     		 	</div>
-    		 </section>
+    		</section>
     	</header>
-		<section class="section skills module parallax parallax-1">
-		 	<div class="wrap skills__wrap">
-		 		<div class="skills__top">
-		 			<div class="skills__list">
-			 			<div class="skills__block">
-			 				<div class="skills__front">
-			 					<span>icon</span>
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>веб-пректов любого уровня</p>
-			 				</div>
-			 				<div class="skills__back">
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>Дизайн и программирование сайтов под любые задачи</p>
-			 				</div>
-			 			</div>
-			 			<div class="skills__block">
-			 				<div class="skills__front">
-			 					<span>icon</span>
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>веб-пректов любого уровня</p>
-			 				</div>
-			 				<div class="skills__back">
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>Дизайн и программирование сайтов под любые задачи</p>
-			 				</div>
-			 			</div>
-			 			<div class="skills__block">
-			 				<div class="skills__front">
-			 					<span>icon</span>
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>веб-пректов любого уровня</p>
-			 				</div>
-			 				<div class="skills__back">
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>Дизайн и программирование сайтов под любые задачи</p>
-			 				</div>
-			 			</div>
-			 			<div class="skills__block">
-			 				<div class="skills__front">
-			 					<span>icon</span>
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>веб-пректов любого уровня</p>
-			 				</div>
-			 				<div class="skills__back">
-				 				<h3>РАЗРАБОТКА</h3>
-				 				<p>Дизайн и программирование сайтов под любые задачи</p>
-			 				</div>
-			 			</div>
-		 			</div>
-		 		</div>
-		 		<div class="m-wrap skills__m-wrap">
-		 			<div class="m-wrap skills__testimonials">
-		 				<h3>«Новый сайт окупился за пару недель! <br>
-							Больше клиентов-больше продаж. <br>
-							Отдельное спасибо за супер-дизайн»
-						</h3>
-						<span>Foto</span>
-		 			</div>
-		 		</div>
-		 	</div>
-		</section>
-	<section class="section why-we">
-	 	<div class="wrap why-we__wrap">
-	 		<div class="m-wrap why-we__m-wrap">
-	 			<h3>Заказать сайт лучше у нас</h3>
-	 			<p>Есть минимум 4 причины</p>
-	 			<div class="why-we__content">
-	 				<div class="why-we__list">
-		 				<div class="why-we__item">
-		 					<span>1.</span>
-		 					<div>
-		 						<h4>Соответствует немецкому законодательству</h4>
-								<p>Impressum, Datenschutz, Bildernachweis- мы знаем, что это, как это и куда это</p>
-		 					</div>
-		 				</div>
-		 				<div class="why-we__item">
-		 					<span>3.</span>
-		 					<div>
-			 					<h4>Оптимизирован для мобильных устройств</h4>
-								<p>Ваш сайт выглядит одинаково хорошо на всех экранах, на всех устройствах</p>
-							</div>
-		 				</div>
-		 			</div>	
-		 			<div class="why-we__list">
-		 				<div class="why-we__item">
-		 					<span>2.</span>
-		 					<div>
-		 					<h4>Имеет систему управления</h4>
-								<p>Управляйте своим сайтом!
-								Редактируйте, меняйте, наводите красоту. Это просто</p>
-							</div>
-		 				</div>
-		 				<div class="why-we__item">
-		 					<span>4.</span>
-		 					<div>
-		 						<h4>Говорит на многих языках</h4>
-								<p>Мультиязычный сайт? Не проблема! Ваша интернет-страница может быть сразу на нескольких языкках. Или добавим язык позже </p>
-		 					</div>
-		 				</div>
-		 			</div>	
-	 			</div>
-	 			<div class="why-we__24">
-	 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/24st.png alt="24" width="543" height="121" class="lazy">
-	 				<h4>Закажите сайт до конца месяца и первая инфомация на сайте появится уже через 24 часа.
-						Так быстро только у нас!
-					</h4>
-					<a href="#">начни сейчас!</a>
-	 			</div>
-	 		</div>
-	 	</div>
-	</section>
-		<section class="section gallery">
-		 	<div class="wrap gallery__wrap">
-		 		<div class="m-wrap gallery__m-wrap">
-		 			<h3>Последние проекты</h3> 
-		 			<div class="gallery__fancy">
-		 				<div class="gallery__list">
-		 					<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" /></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio2.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio3.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-		 				</div>
-		 				<div class="gallery__list">
-		 					<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio3.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio2.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio3.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-		 				</div>
-		 				<div class="gallery__list">
-		 					<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-			 				<a id="single_image" href="../images/desktop/Header2.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/portfolio1.jpg alt="" width="200" height="114" class="lazy" alt=""/></a>
-		 				</div>
-		 			</div>
-		 		</div>
-		 	</div>
-		</section>
-		<section class="section price">
-		 	<div class="wrap price__wrap">
-		 		<div class="m-wrap price__m-wrap">
-		 			<h3>Сколько может стоить сайт</h3>
-		 			<div class="price__list">
-		 				<div class="price__item">
-		 					<p>Старт</p>
-		 					<span>199€</span>
-		 					<table>
-		 					<tr>
-		 						<th>система управления сайтом CMS</th>
-		 					</tr>
-		 					<tr>
-		 						<th>до 3 страниц</th>
-		 					</tr>
-		 					<tr>
-		 						<th>до 5 изображений</th>
-		 					</tr>
-		 					<tr>
-		 						<th>базовое наполнение сайта</th>
-		 					</tr>		
-		 					</table>
-		 					<a href="#">подробнее</a>
-		 				</div>
-		 				<div class="price__item">
-		 					<p>Свой бизнес</p>
-		 					<span>399€</span>
-		 					<table>
-		 					<tr>
-		 						<th>адаптивный дизайн</th>
-		 					</tr>
-		 					<tr>
-		 						<th>фотогалерея или каталог</th>
-		 					</tr>
-		 					<tr>
-		 						<th>форма обратной связи</th>
-		 					</tr>
-		 					<tr>
-		 						<th>и многое другое</th>
-		 					</tr>		
-		 					</table>
-		 					<a href="#">подробнее</a>
-		 				</div>
-		 				<div class="price__item">
-		 					<p>Индивидуальный</p>
-		 					<span>от 499€</span>
-		 					<table>
-		 					<tr>
-		 						<th>логотип, фирменный стиль</th>
-		 					</tr>
-		 					<tr>
-		 						<th>мультиязычный интерфейс</th>
-		 					</tr>
-		 					<tr>
-		 						<th>интеграция с социальными сетями</th>
-		 					</tr>
-		 					<tr>
-		 						<th>и многое другое</th>
-		 					</tr>		
-		 					</table>
-		 					<a href="#">подробнее</a>
-		 				</div>
-		 			</div>
-		 		</div>
-		 	</div>
-		</section>
-	<section class="section project-start">
-	 	<div class="wrap project-start__wrap">
-	 		<div class="m-wrap project-start__m-wrap">
-	 			<div class="project-start__content">
-	 				<h3>Проект «Старт»</h3>
-	 				<p>Возможность заявить о себе</p>
-	 				<span>Представляет первичную информацию, вид услуги, контактные данные</span>
-	 				<ul>
-	 					<li>Система управления на немецком или русском языках</li>
-	 					<li>3 страницы, 3 пункта меню</li>
-	 					<li>до 5 изображений</li>
-	 					<li>наполнение сайта предоставленными Вами текстами и изображениями</li>
-	 					<li>контактные данные</li>
-	 					<li>загрузка сайта на сервер и тест на функциональность</li>
-	 					<li>Демонстрационную версии сайта Старт Вы можете посмотреть <a href="#">ЗДЕСЬ</a></li>
-	 				</ul>
-	 			</div>
-	 			<div class="project-start__img">
-	 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/tablet.png width="600" height="410" alt="tablet" class="lazy">
-	 			</div>
-	 		</div>
-	 	</div>
-	</section>
-	<section class="section project-business">
-	 	<div class="wrap project-business__wrap">
-	 		<div class="m-wrap project-business__m-wrap">
-	 			<div class="project-business__img">
-	 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/notebook.png width="600" height="600" alt="tablet" class="lazy">
-	 			</div>
-	 			<div class="project-business__content">
-	 				<h3>Проект «Свой бизнес»</h3>
-	 				<p>Для умных предпринимателей</p>
-	 				<span>Предринимателям в Германии и Европе. Продаёт Ваш товар или услугу. 
-	 					Оптимизирован под поисковые системы. Ищет новых клиентов
-	 				</span>
-	 				<ul>
-	 					<li>Дизайн в фирменном стиле</li>
-	 					<li>Оптимирован для просмотра на мобильных устройствах</li>
-	 					<li>фотогалерея или каталог товаров</li>
-	 					<li>7 страниц, 7 пунктов меню</li>
-	 					<li>Прайслисты, отзывы клиентов</li>
-	 					<li>регистрация сайта в Google, Яндекс</li>
-	 					<li>контактные данные с формой обратной связи</li>
-	 					<li>загрузка сайта на сервер,тест на функциональность, резервное копирование</li>
-	 				</ul>
-	 			</div>
-	 		</div>
-	 	</div>
-	</section>
-	<section class="section project-person">
-	 	<div class="wrap project-person__wrap">
-	 		<div class="m-wrap project-person__m-wrap">
-	 			<div class="project-person__content">
-	 				<h3>Проект «Индивидуальный»</h3>
-	 				<p>Нет предела совершенству</p>
-	 				<span>
-	 					Сайт фирмы или организации. Расширяет возможности тарифа «Свой бизнес» под Ваши нужды и желания
-	 				</span>
-	 				<ul>
-	 					<li>интернет-магазин</li>
-	 					<li>неограниченное количество страниц</li>
-	 					<li>многоуровневое меню или несколько элементов навигации</li>
-	 					<li>разработка логотипа и фирменного стиля</li>
-	 					<li>мультиязычный интерфейс</li>
-	 					<li>Слайд-шоу с элементами анимации</li>
-	 					<li>Написание текстов и профессиональная фото- и видеосьёмка</li>
-	 					<li>Рассылка, форум</li>
-	 				</ul>
-	 			</div>
-	 			<div class="project-person__img">
-	 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/desktop/Computer.png width="600" height="483" class="lazy" alt="computer">
-	 			</div>
-	 		</div>
-	 	</div>
-	</section>
-	 	<section class="section footer">
+    	<section class="section offer">
+    	 	<div class="wrap offer__wrap">
+    	 		<div class="m-wrap offer__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    	 			<h3>МЫ ПРЕДЛОГАЕМ</h3>
+    	 			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    					Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    				</p>
+    				<div class="offer__content">
+    					<div class="offer__item">
+    						<span class="offer1"></span>
+    						<h4>РЫБНЫЙ ТЕКСТ</h4>
+    						<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми 		правилами.
+    						</p>
+    					</div>
+    					<div class="offer__item">
+    						<span class="offer2"></span>
+    						<h4>РЫБНЫЙ ТЕКСТ</h4>
+    						<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми 		правилами.
+    						</p>
+    					</div>
+    					<div class="offer__item">
+    						<span class="offer3"></span>
+    						<h4>РЫБНЫЙ ТЕКСТ</h4>
+    						<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми 		правилами.
+    						</p>
+    					</div>
+    					<div class="offer__item">
+    						<span class="offer4"></span>
+    						<h4>РЫБНЫЙ ТЕКСТ</h4>
+    						<p>Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми 		правилами.
+    						</p>
+    					</div>
+    				</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section team" id="team">
+    	 	<div class="wrap team__wrap">
+    	 		<div class="m-wrap team__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    	 			<h3>НАША КОМАНДА</h3>
+    	 			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    					Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    				</p>
+    				<div class="team__content">
+    					<div class="team__item-double">
+    						<div class="team__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/team/team1.jpg alt="team" class="lazy" height="235" width="235">
+    							<div class="team__social">
+    								<a href="#" class="f"></a>
+    								<a href="#" class="tw"></a>
+    								<a href="#" class="p"></a>
+    								<a href="#" class="you"></a>
+    							</div>
+    							<h4>ДИЕТОЛОГ & ТРЕНЕР</h4>
+    							<span>АЛИСА</span>
+    							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    							</p>
+    						</div>
+    						<div class="team__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/team/team2.jpg alt="team" class="lazy" height="235" width="235">
+    							<div class="team__social">
+    								<a href="#" class="f"></a>
+    								<a href="#" class="tw"></a>
+    								<a href="#" class="p"></a>
+    								<a href="#" class="you"></a>
+    							</div>
+    							<h4>КОУЧ ЙОГИ & ТРЕНЕР</h4>
+    							<span>ВЕРОНИКА</span>
+    							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    							</p>
+    						</div>
+    					</div>
+    					<div class="team__item-double">
+    						<div class="team__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/team/team1.jpg alt="team" class="lazy" height="235" width="235">
+    							<div class="team__social">
+    								<a href="#" class="f"></a>
+    								<a href="#" class="tw"></a>
+    								<a href="#" class="p"></a>
+    								<a href="#" class="you"></a>
+    							</div>
+    							<h4>КАРДИО-ТРЕНЕР</h4>
+    							<span>ЯНА</span>
+    							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    							</p>
+    						</div>
+    						<div class="team__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/team/team2.jpg alt="team" class="lazy" height="235" width="235">
+    							<div class="team__social">
+    								<a href="#" class="f"></a>
+    								<a href="#" class="tw"></a>
+    								<a href="#" class="p"></a>
+    								<a href="#" class="you"></a>
+    							</div>
+    							<h4>ТРЕНЕР ЙОГИ</h4>
+    							<span>ЭЛЛА</span>
+    							<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section online" id="online">
+    	 	<div class="wrap online__wrap">
+    	 		<div class="m-wrap online__m-wrap">
+    				<h4><span>ЙОГА</span> ОБУЧЕНИЕ ОНЛАЙН</h4>
+    				<div class="online__button">
+    		 			<img src="../images/button_figure.png" alt="button">
+    		 			<a href="#online">УЗНАТЬ БОЛЬШЕ</a>
+    		 		</div>
+    		 		<div class="online__video">
+    		 			<p>X</p>
+    		 			<iframe src="https://goo.gl/aCZ6JX" allowfullscreen></iframe>
+    		 		</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section time" id="time">
+    	 	<div class="wrap time__wrap">
+    	 		<div class="m-wrap time__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    	 			<h3>НАШ ГРАФИК</h3>
+    	 			<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    					Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    				</p>
+    				<div class="time__content">
+    					<div class="time__hover">
+    						<span>
+    							<b>ЙОГА ДЛЯ МАМЫ  С МЛАДЕНЦЕМ</b>
+    							<p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
+    							<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+    							</p>
+    						</span>
+    						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/time/time1.jpg alt="time" class="lazy" height="291" width="473">
+    					</div>
+    					<div class="time__hover">
+    						<span>
+    							<b>ЙОГА ДЛЯ  БУДУЮЩИХ МАМ</b>
+    							<p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
+    							<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+    							</p>
+    						</span>
+    						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/time/time2.jpg alt="time" class="lazy" height="291" width="473">
+    					</div>
+    					<div class="time__hover">
+    						<span>
+    							<b>ЙОГА ДЛЯ ДЕТОК ОТ 5 ДО 15 ЛЕТ</b>
+    							<p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
+    							<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+    							</p>
+    						</span>
+    						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/time/time3.jpg alt="time" class="lazy" height="291" width="473">
+    					</div>
+    					<div class="time__hover">
+    						<span>
+    							<b>ЙОГА ДЛЯ ВЗРОСЛЫХ В ГРУППЕ</b>
+    							<p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
+    							<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+    							</p>
+    						</span>
+    						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/time/time4.jpg alt="time" class="lazy" height="291" width="473">
+    					</div>
+    					<div class="time__hover">
+    						<span>
+    							<b>ЙОГА ДЛЯ ВЗРОСЛЫХ В ПАРЕ</b>
+    							<p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
+    							<p>Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+    							</p>
+    						</span>	
+    						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/time/time5.jpg alt="time" class="lazy" height="291" width="473">
+    					</div>
+    				</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section gallery" id="gallery">
+    	 	<div class="wrap gallery__wrap">
+    	 		<div class="m-wrap gallery__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    		 		<h3>НАША ГАЛЛЕРЕЯ</h3>
+    		 		<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    						Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    				</p>
+    				<div class="gallery__item">
+    					<div class="gallery__list">
+    						<a class="single_image" href="../images/gallery/gall1.jpg"><img src="../images/gallery/gallery1.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall2.jpg"><img src="../images/gallery/gallery2.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall3.jpg"><img src="../images/gallery/gallery3.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall4.jpg"><img src="../images/gallery/gallery4.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall5.jpg"><img src="../images/gallery/gallery5.jpg" alt=""/></a>
+    					</div>
+    					<div class="gallery__list2">
+    						<a class="single_image" href="../images/gallery/gall6.jpg"><img src="../images/gallery/gallery6.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall7.jpg"><img src="../images/gallery/gallery7.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall8.jpg"><img src="../images/gallery/gallery8.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall9.jpg"><img src="../images/gallery/gallery9.jpg" alt=""/></a>
+    						<a class="single_image" href="../images/gallery/gall10.jpg"><img src="../images/gallery/gallery10.jpg" alt=""/></a>
+    					</div>
+    				</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section subscribe">
+    	 	<div class="wrap subscribe__wrap">
+    	 		<div class="m-wrap subscribe__m-wrap">
+    				<div class="subscribe__list">
+    					<div class="subscribe__item-double">
+    						<div class="subscribe__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/subscribe/subscribe1.png alt="subscribe" class="lazy" height="235" width="235">
+    							<span class="subscribe__icon1">1009</span>
+    							<p>ДОВОЛЬНЫХ <br>КЛИЕНТОВ</p>
+    						</div>
+    			 			<div class="subscribe__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/subscribe/subscribe2.png alt="subscribe" class="lazy" height="235" width="235">
+    							<span class="subscribe__icon2">820</span>
+    							<p>ПРОРАБОТАНЫХ <br>ДНЕЙ</p>
+    						</div>
+    					</div>
+    					<div class="subscribe__item-double">
+    						<div class="subscribe__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/subscribe/subscribe3.png alt="subscribe" class="lazy" height="235" width="235">
+    							<span class="subscribe__icon3">25</span>
+    							<p>ФИЛИАЛОВ <br>ПО РОССИИ</p>
+    						</div>
+    						<div class="subscribe__item">
+    							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/subscribe/subscribe4.png alt="subscribe" class="lazy" height="235" width="235">
+    							<span class="subscribe__icon4">50</span>
+    							<p>СПЕЦИАЛИСТОВ</p>
+    						</div>
+    					</div>	
+    				</div>
+    				<div class="subscribe__form">
+    					<h4>ПОДПИСАТЬСЯ НА РАССЫЛКУ НОВОСТЕЙ</h4>
+    					<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    						Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    					</p>
+    					<div class="subscribe__input">
+    						<input type="text" placeholder="ВАШ EMAIL">
+    						<a href="#">ПОДПИСАТЬСЯ</a>
+    						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/button_figure.png alt="button" class="lazy" height="80" width="80">
+    					</div>
+    				</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section price" id="price">
+    	 	<div class="wrap price__wrap">
+    	 		<div class="m-wrap price__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    		 		<h3>СТОИМОСТЬ КУРСА ЙОГИ</h3>
+    		 		<div class="price__list">
+    		 			<div class="price__item-small">
+    		 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/price/price_figure.png alt="price" class="lazy" height="68" width="79">
+    		 				<h4>БАЗОВЫЙ КУРС</h4>
+    		 				<span>30 ЧАСОВ</span>
+    		 				<div class="price__block">
+    		 					<span>150$</span>
+    		 				</div>
+    		 				<ul>
+    		 					<li>АЭРОБИКА</li>
+    		 					<li>ЙОГА</li>
+    		 					<li>РАСТЯЖКА</li>
+    		 				</ul>
+    		 				<p>Тренировка расделенна на 3 этапа <br>График не гибкий </p>
+    		 			</div>
+    					<div class="price__item-big">
+    		 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/price/price_figure.png alt="price" class="lazy" height="68" width="79">
+    		 				<h4>ПРЕМИУМ КУРС</h4>
+    		 				<span>60 ЧАСОВ</span>
+    		 				<div class="price__block">
+    		 					<span>250$</span>
+    		 				</div>
+    		 				<ul>
+    		 					<li>АЭРОБИКА</li>
+    		 					<li>ЙОГА</li>
+    		 					<li>РАСТЯЖКА</li>
+    		 				</ul>
+    		 				<p>Тренировка расделенна на 3 этапа <br>График не гибкий </p>
+    		 			</div>	
+    		 			<div class="price__item-small">
+    		 				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/price/price_figure.png alt="price" class="lazy" height="68" width="79">
+    		 				<h4>ПЛАТИНОВЫЙ КУРС</h4>
+    		 				<span>100 ЧАСОВ</span>
+    		 				<div class="price__block">
+    		 					<span>350$</span>
+    		 				</div>
+    		 				<ul>
+    		 					<li>АЭРОБИКА</li>
+    		 					<li>ЙОГА</li>
+    		 					<li>РАСТЯЖКА</li>
+    		 				</ul>
+    		 				<p>Тренировка расделенна на 3 этапа <br>График не гибкий </p>
+    		 			</div>	
+    		 		</div>
+    	 
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section reason">
+    	 	<div class="wrap reason__wrap">
+    	 		<div class="m-wrap reason__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    		 		<h3>ПРИЧИНЫ ЗАНИМАТЬСЯ ЙОГОЙ</h3>
+    		 		<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    						Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    				</p>
+    				<div class="reason__content">
+    					<div class="reason__list">
+    						<div class="reason__double">
+    							<div class="reason__item">
+    								<div class="reason__img">
+    									<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/reason/reason1.jpg alt="reason" class="lazy" height="150" width="150">
+    								</div>
+    								<div class="reason__item-button">
+    									<p>Эта парадигматическая страна, <br>в которой жаренные члены <br>предложения залетают прямо <br>в рот. 
+    									</p>
+    					 				<img src="../images/button_figure.png" alt="button">
+    					 				<a href="#contacts">ЗАБРАНИРОВАТЬ</a>
+    				 				</div>
+    							</div>
+    							<div class="reason__item">
+    								<div class="reason__img">
+    									<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/reason/reason1.jpg alt="reason" class="lazy" height="150" width="150">
+    								</div>
+    								<div class="reason__item-button">
+    									<p>Эта парадигматическая страна, <br>в которой жаренные члены <br>предложения залетают прямо <br>в рот. 
+    									</p>
+    					 				<img src="../images/button_figure.png" alt="button">
+    					 				<a href="#contacts">ЗАБРАНИРОВАТЬ</a>
+    				 				</div>
+    							</div>
+    						</div>
+    						<div class="reason__double">
+    							<div class="reason__item">
+    								<div class="reason__img">
+    									<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/reason/reason2.jpg alt="reason" class="lazy" height="150" width="150">
+    								</div>
+    								<div class="reason__item-button">
+    									<p>Эта парадигматическая страна, <br>в которой жаренные члены <br>предложения залетают прямо <br>в рот. 
+    									</p>
+    					 				<img src="../images/button_figure.png" alt="button">
+    					 				<a href="#contacts">ЗАБРАНИРОВАТЬ</a>
+    				 				</div>
+    							</div>
+    							<div class="reason__item">
+    								<div class="reason__img">
+    									<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/reason/reason2.jpg alt="reason" class="lazy" height="150" width="150">
+    								</div>
+    								<div class="reason__item-button">
+    									<p>Эта парадигматическая страна, <br>в которой жаренные члены <br>предложения залетают прямо <br>в рот. 
+    									</p>
+    					 				<img src="../images/button_figure.png" alt="button">
+    					 				<a href="#contacts">ЗАБРАНИРОВАТЬ</a>
+    				 				</div>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="reason__phone">
+    						<h4>ПРИСОЕДИНИТЬСЯ СЕЙЧАС!</h4>
+    						<span>ПОЗВОНИТЕ НАМ</span>
+    						<h5>ТЕЛ: 04355-256348</h5>
+    						<p>Oднажды одна маленькая строчка рыбного текста по имени <br>Lorem ipsum решила выйти в 		большой мир грамматики. 
+    						</p>
+    						<div class="reason__phone-button">
+    			 				<img src="../images/button_figure.png" alt="button">
+    			 				<a href="#contacts">ЗАБРАНИРОВАТЬ</a>
+    		 				</div>
+    					</div>	
+    				</div>
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section slider">
+    	 	<div class="wrap slider__wrap">
+    	 		<div class="slider__m-wrap">
+    				<ul class="bxslider">
+    				  <li><img src="../images/slider/slider1.png" /></li>
+    				  <li><img src="../images/slider/slider2.png" /></li>
+    				</ul>	 
+    	 		</div>
+    	 	</div>
+    	</section>
+    	<section class="section asans_slider" id="asans_slider">
+    	 	<div class="wrap asans_slider__wrap">
+    	 		<div class="m-wrap asans_slider__m-wrap">
+    				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-original=../images/chakra.png alt="chakra" class="lazy" height="90" width="90">
+    		 		<h3>АСАНЫ ЙОГИ ДЛЯ НАЧИНАЮЩИХ</h3>
+    		 		<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. <br>
+    						Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+    				</p>
+    				<div class="asans_slider__item">
+    					<div class="slider2">
+    					  <div class="slide"><img src="../images/asans_slider/1.jpg"><span><b>01</b><p>SAMASTHITIH</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/2.jpg"><span><b>02</b><p>EKAM</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/3.jpg"><span><b>03</b><p>DVE</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/4.jpg"><span><b>04</b><p>TRINI</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/5.jpg"><span><b>05</b><p>CATVARI</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/6.jpg"><span><b>06</b><p>PANCA</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/7.jpg"><span><b>07</b><p>SAT</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/8.jpg"><span><b>08</b><p>EKAM</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/9.jpg"><span><b>09</b><p>PADANGUSTHASANA</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/10.jpg"><span><b>10</b><p>UTTHITA TRIKONASANA</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/11.jpg"><span><b>11</b><p>UTTHITA PARSVA KONASANA</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/12.jpg"><span><b>12</b><p>PRASARITA PADOTTANASANA</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/13.jpg"><span><b>13</b><p>PARSVOTTANASANA</p></span></div>
+    					  <div class="slide"><img src="../images/asans_slider/14.jpg"><span><b>14</b><p>EKA PADA PADANGUSTHASANA</p></span></div>
+    					</div>
+    				</div>
+    	 
+    	 		</div>
+    	 	</div>
+    	</section>
+	<footer>
+		<section class="section footer" id="contacts">
 		 	<div class="wrap footer__wrap">
 		 		<div class="m-wrap footer__m-wrap">
-		 			<h3>Получить бесплатный расчёт стоимости</h3>
-		 			<form class="footer__form form" action="ajax/mail.php" method="post">
-		 				<input type="text" name="name" placeholder="Ваше имя">
-		 				<input type="text" name="email" placeholder="Ваш email">
-		 				<input type="text" name="phone" placeholder="Ваш телефон">
-		 				<input type="hidden" name="frmid" value="Форма в первом блоке">
-		 				<p>Тип сайта</p>
-		 				<input type="checkbox" name="space" value="1"> <span>Старт</span>
-		 				<input type="checkbox" name="space" value="2"> <span>Свой бизнес</span>
-		 				<input type="checkbox" name="space" value="3"> <span>Индивидуальный</span>
-		 				<input type="checkbox" name="space" value="4"> <span>Решу после консультации</span>
-						<textarea placeholder="Ваше сообщение"></textarea>
-						<button href="#" type="submit">отправить</button>
-		 			</form>
+					<h4>СВЯЖИСЬ С НАМИ</h4>
+					<div class="footer__address">
+						<span class="phone">ТЕЛЕФОН:  04355-256348</span>
+						<span class="address">АДРЕС:  ГOР. АЛМА-АТЫ <br>УЛ. ПУШКИНА 25</span>
+						<span class="email">EMAIL: Yogastudia@gmail.com</span>
+						<div class="footer__icons">
+							<span class="twitter"></span>
+							<span class="youtube"></span>
+							<span class="skype"></span>
+							<span class="instagramm"></span>
+							<span class="facebook"></span>
+							<span class="bobo"></span>
+							<span class="petr"></span>
+						</div>
+					</div>
+		 			<div class="footer__form">
+		 				<form class="my_class__form form" action="ajax/mail.php" method="post">
+		 					<input type="text" name="name" placeholder="Ваше имя">
+		 					<input type="text" name="email" placeholder="Ваш email">
+		 					<input type="hidden" name="frmid" value="Форма в первом блоке">
+		 					<textarea placeholder="Ваше сообщение"></textarea>
+		 					<div class="footer__button">
+				 				<img src="../images/button_figure.png" alt="button">
+				 				<button type="submit">ОТПРАВИТЬ</button>
+				 			</div>
+		 				</form>
+		 				
+		 				<!-- pop up -->
+		 				<div id="hidden-box">
+		 				    <div id="form-error-pop">
+		 					<div id="form-error-text"></div>
+		 				    </div>
+		 				    <div id="okgo">Спасибо за заявку</div>	
+		 				</div>
+		 			</div>
 		 		</div>
 		 	</div>
 		</section>
-		
-		<!-- pop up -->
-		<div id="hidden-box">
-		    <div id="form-error-pop">
-			<div id="form-error-text"></div>
-		    </div>
-		    <div id="okgo">Спасибо за заявку</div>	
-		</div>
-	<?php include('track/body.php'); ?>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
