@@ -10,9 +10,9 @@ DirectoryIndex index.php index.html index.htm
     ExpiresActive On
     ExpiresDefault "access plus 1 month"
 
-    ExpiresByType image/gif "access plus 2 months"
-    ExpiresByType image/jpeg "access plus 2 months"
-	ExpiresByType image/png "access plus 2 months"
+    ExpiresByType images/gif "access plus 2 months"
+    ExpiresByType images/jpeg "access plus 2 months"
+	ExpiresByType images/png "access plus 2 months"
 	ExpiresByType text/css "access plus 2 months"
 	
 </IfModule>
